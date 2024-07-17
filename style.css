@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header{
+    max-width: 550px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1{
+    font-weight: 200;
+    color: rgb(64, 61, 61);
+}
+
+h1:nth-child(2){
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.box{
+    background: #fff;
+    box-shadow: 3px 7px 30px rgb(149, 145, 145);
+    border-radius: 7px;
+    padding: 30px;
+    margin: 15px;
+    width: 350px;
+    
+}
+
+.box h3{
+    font-size: 22px;
+    color: rgb(64, 61, 61);
+}
+
+.box p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img{
+    float: right;
+}
+
+.box:nth-child(1){
+    border-top: 5px solid hsl(180, 62%, 55%) ;
+}
+.box:nth-child(2){
+    border-top: 5px solid hsl(0, 78%, 62%) ;
+}
+.box:nth-child(3){
+    border-top: 5px solid hsl(212, 86%, 64%) ;
+}
+.box:nth-child(4){
+    border-top: 5px solid hsl(34, 97%, 64%) ;
+}
+
+.box:nth-child(odd){
+    transform: translateY(50%);
+}
+
+@media (max-width:1150px) {
+    .box:nth-child(odd){
+        transform: translateY(0%);
+    }
+}
